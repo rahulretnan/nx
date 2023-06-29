@@ -1583,16 +1583,6 @@
               "name": "Advanced Configuration",
               "id": "advanced-config",
               "file": "nx-cloud/private/advanced-config"
-            },
-            {
-              "name": "Kubernetes Setup",
-              "id": "kubernetes-setup",
-              "file": "nx-cloud/private/kubernetes-setup"
-            },
-            {
-              "name": "Standalone",
-              "id": "standalone",
-              "file": "nx-cloud/private/standalone"
             }
           ]
         },
