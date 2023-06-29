@@ -1560,6 +1560,11 @@
               "file": "nx-cloud/private/auth-github"
             },
             {
+              "name": "On-Prem VM Setup",
+              "id": "ami-setup",
+              "file": "nx-cloud/private/ami-setup"
+            },
+            {
               "name": "Authenticate with GitLab",
               "id": "auth-gitlab",
               "file": "nx-cloud/private/auth-gitlab"

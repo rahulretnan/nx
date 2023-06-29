@@ -52,6 +52,10 @@ describe('nx-dev: Nx Cloud section', () => {
       path: '/nx-cloud/private-cloud/auth-gitlab',
     },
     {
+      title: 'On-Prem VM Setup',
+      path: '/nx-cloud/private-cloud/ami-setup',
+    },
+    {
       title: 'BitBucket Auth',
       path: '/nx-cloud/private-cloud/auth-bitbucket',
     },
