@@ -269,6 +269,16 @@
         "tags": []
       },
       {
+        "id": "ami-setup",
+        "name": "On-Prem VM Setup",
+        "description": "",
+        "file": "nx-cloud/private/ami-setup",
+        "itemList": [],
+        "isExternal": false,
+        "path": "/nx-cloud/private-cloud/ami-setup",
+        "tags": []
+      },
+      {
         "id": "auth-gitlab",
         "name": "Authenticate with GitLab",
         "description": "",
@@ -361,6 +371,16 @@
     "itemList": [],
     "isExternal": false,
     "path": "/nx-cloud/private-cloud/auth-github",
+    "tags": []
+  },
+  "/nx-cloud/private-cloud/ami-setup": {
+    "id": "ami-setup",
+    "name": "On-Prem VM Setup",
+    "description": "",
+    "file": "nx-cloud/private/ami-setup",
+    "itemList": [],
+    "isExternal": false,
+    "path": "/nx-cloud/private-cloud/ami-setup",
     "tags": []
   },
   "/nx-cloud/private-cloud/auth-gitlab": {

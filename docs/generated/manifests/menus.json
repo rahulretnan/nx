@@ -3941,6 +3941,14 @@
             "disableCollapsible": false
           },
           {
+            "name": "On-Prem VM Setup",
+            "path": "/nx-cloud/private-cloud/ami-setup",
+            "id": "ami-setup",
+            "isExternal": false,
+            "children": [],
+            "disableCollapsible": false
+          },
+          {
             "name": "Authenticate with GitLab",
             "path": "/nx-cloud/private-cloud/auth-gitlab",
             "id": "auth-gitlab",
@@ -4011,6 +4019,14 @@
         "name": "Authenticate with GitHub",
         "path": "/nx-cloud/private-cloud/auth-github",
         "id": "auth-github",
+        "isExternal": false,
+        "children": [],
+        "disableCollapsible": false
+      },
+      {
+        "name": "On-Prem VM Setup",
+        "path": "/nx-cloud/private-cloud/ami-setup",
+        "id": "ami-setup",
         "isExternal": false,
         "children": [],
         "disableCollapsible": false
