@@ -265,8 +265,6 @@
     - [Authenticate with BitBucket](/nx-cloud/private-cloud/auth-bitbucket)
     - [Authenticate via SAML](/nx-cloud/private-cloud/auth-saml)
     - [Advanced Configuration](/nx-cloud/private-cloud/advanced-config)
-    - [Kubernetes Setup](/nx-cloud/private-cloud/kubernetes-setup)
-    - [Standalone](/nx-cloud/private-cloud/standalone)
   - [Reference](/nx-cloud/reference)
     - [Configuration Options](/nx-cloud/reference/config)
     - [nx-cloud CLI](/nx-cloud/reference/nx-cloud-cli)
