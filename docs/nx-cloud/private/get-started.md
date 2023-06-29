@@ -9,6 +9,7 @@ a deployment option.
 ### Multi-tenant
 
 The quickest way and easiest way to get up and running with NxCloud is using one of our existing secure, multi-tenant managed clusters:
+
 - https://nx.app/
 - Or, if you'd like all of your data to be hosted in Europe, you can use https://eu.nx.app/
 
