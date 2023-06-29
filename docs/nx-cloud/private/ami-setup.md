@@ -6,17 +6,24 @@
 2. Launch a new instance from that AMI
 3. Recommended instance type: `t3.2xlarge`
 4. You will need to SSH into the instance once it's created:
-   1. Use an existing SSH key-pair that you already have installed locally.
-   2. [Or create a new one and download the keys locally](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html?icmpid=docs_ec2_console#having-ec2-create-your-key-pair) 3. Then select it in the list
-5. Networking: 6. Allow the instance to receive HTTP and HTTPS traffic 7. Allow SSH from your current IP
+   - Use an existing SSH key-pair that you already have installed locally.
+   - [Or create a new one and download the keys locally](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html?icmpid=docs_ec2_console#having-ec2-create-your-key-pair)
+     - Then select your new SSH pair from the list
+5. Networking:
+   - Allow the instance to receive HTTP and HTTPS traffic
+   - Allow SSH from your current IP
 6. Leave the storage options as they are (external storage of 50GB)
 7. "Launch instance"
 8. Wait 10 minutes, then navigate to your instance's IP in the browser. You should see the NxCloud dashboard!
 
 ### Your NxCloud URL
 
-1. At this point, you can consider your instance's IP address the URL of NxCloud. 2. You can use NxCloud and all the below steps will work for you.
-2. You might want, however, to add a Load Balancer in front of the instance, with an explicit domain (e.g. https://my-nxcloud.my-org.com). 3. This is strongly recommended because you will be able to upgrade/restart/re-configure your NxCloud EC2 instance while keeping the NxCloud URL static. 3. Create an [application load balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html) 4. You will need to create a certificate for your domain to assign to the LB
+1. At this point, you can consider your instance's IP address the URL of NxCloud.
+   - You can use NxCloud and all the below steps will work for you.
+2. You might want, however, to add a Load Balancer in front of the instance, with an explicit domain (e.g. https://my-nxcloud.my-org.com).
+   - This is strongly recommended because you will be able to upgrade/restart/re-configure your NxCloud EC2 instance while keeping the NxCloud URL static.
+   - Create an [application load balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html)
+   - You will need to create a certificate for your domain to assign to the LB
 
 Once you have your NxCloud URL proceed to the below steps!
 
@@ -59,9 +66,6 @@ You can optionally enable authentication using your preferred SSO provider:
 - Bitbucket
 - GitLab
 - SAML (Okta, Azure AD etc.)
-
-<details>
-<summary>⤵️ Here are example configs for enabling auth:</summary>
 
 ```yaml
 # This is all you need to get the baseline of your nx-cloud instance configured!
@@ -118,8 +122,6 @@ secret:
   # samlEntryPoint: 'your_saml_entry_point'
   # samlCert: 'saml_cert'
 ```
-
-</details>
 
 ### Upgrades
 

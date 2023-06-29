@@ -42,13 +42,16 @@ If you'd like to use any of the above options, please mention this to your Enter
 
 ## On-prem, managed by your organization
 
+#### Self-contained VM
+
 If you would like to host NxCloud yourself, within your organization's infrastructure, the easiest way to set it up is as a self-contained VM.
 
-Refer to our ["Self-contained VM" guide](/nx-cloud/private-cloud/ami-setup) for instructions on running NxCloud on Amazon EC2 or Google Cloud.
+Refer to our ["Self-contained VM" guide](/nx-cloud/private-cloud/ami-setup) for instructions on running NxCloud on Amazon EC2.
 
-#### Not recommended: Multi-node setup with Kubernetes
+#### Multi-node setup with Kubernetes
 
-While we'd strongly recommend the above options first, we also offer a multi-node Kubernetes setup, that is deployed via Helm.
+While we'd strongly recommend the above options first, because they remove a lot of the maintenance burden, and do not require too much infrastructure expertise,
+we also offer a multi-node Kubernetes setup, that is deployed via Helm.
 
 You can head over to our [Helm repository](https://github.com/nrwl/nx-cloud-helm/) to explore this option.
 
