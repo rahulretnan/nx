@@ -36,7 +36,7 @@ describe('nx-dev: Nx Cloud section', () => {
       path: '/nx-cloud/account/encryption',
     },
     {
-      title: 'Running Nx Cloud on Prem',
+      title: 'Running Nx Cloud Enterprise',
       path: '/nx-cloud/private-cloud/get-started',
     },
     {
