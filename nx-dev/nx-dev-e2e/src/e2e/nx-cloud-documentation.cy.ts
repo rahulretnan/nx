@@ -52,7 +52,7 @@ describe('nx-dev: Nx Cloud section', () => {
       path: '/nx-cloud/private-cloud/auth-gitlab',
     },
     {
-      title: 'On-Prem VM Setup',
+      title: 'Setting up a dedicated NxCloud VM',
       path: '/nx-cloud/private-cloud/ami-setup',
     },
     {
