@@ -53,14 +53,12 @@ scp -r ./myconfiguration.yaml nx-cloud@<your-instance-ip>:~/config/user/update.y
 ```
 
 That's it! After a few minutes, you should be able to log-in with:
-
-- username: `,admin`
+- username: `admin`
 - password: `<the-password-you-set-above>`
 
 ### Applying the license
 
-Once you log-in, you will see an organisation has been created for you.
-
+Once you log-in, you will see an organisation has been created for you. 
 1. You can rename it or create a new organization.
 2. Navigate to your new organization's page and send us it's id
    - It should look something like this: https://your-url.com/orgs/649f240f7fb955000c1fd10b/workspaces
