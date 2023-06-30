@@ -2,7 +2,7 @@
 
 ## AWS EC2
 
-1. Login to your AWS Console and select [the top image published here](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=public-images;imageName=nx-cloud;owner=623002322076;sort=desc:imageName)
+1. Login to your AWS Console and select [the top image published here](https://console.aws.amazon.com/ec2/v2/home?home#Images:visibility=public-images;imageName=nx-cloud;owner=623002322076;sort=desc:imageName)
 2. Launch a new instance from that AMI
 3. Recommended instance type: `t3.2xlarge`
 4. You will need to SSH into the instance once it's created:
@@ -12,18 +12,22 @@
 5. Networking:
    - Allow the instance to receive HTTP and HTTPS traffic
    - Allow SSH from your current IP
-6. Leave the storage options as they are (external storage of 50GB)
+6. Leave the storage options as they are
 7. "Launch instance"
 8. Wait 10 minutes, then navigate to your instance's IP in the browser. You should see the NxCloud dashboard!
 
+![NxCloud landing page](/nx-cloud/private/images/nx-cloud-landing.png)
+
 ### Your NxCloud URL
 
-1. At this point, you can consider your instance's IP address the URL of NxCloud.
-   - You can use NxCloud and all the below steps will work for you.
+1. At this point, your instance will have a public IP accessible from the browser.
+   - You can consider this IP the URL of NxCloud, and proceed with the below steps and all will work fine!
 2. You might want, however, to add a Load Balancer in front of the instance, with an explicit domain (e.g. https://my-nxcloud.my-org.com).
    - This is strongly recommended because you will be able to upgrade/restart/re-configure your NxCloud EC2 instance while keeping the NxCloud URL static.
    - Create an [application load balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html)
    - You will need to create a certificate for your domain to assign to the LB
+   - And you will need to target your EC2 instance from the LB
+   - You should now have a permanent domain pointing to your NxCloud instance
 
 Once you have your NxCloud URL proceed to the below steps!
 
@@ -48,7 +52,17 @@ secret:
 scp -r ./myconfiguration.yaml nx-cloud@<your-instance-ip>:~/config/user/update.yaml
 ```
 
-That's it! After a few minutes, you should be able to log-in using your password!
+That's it! After a few minutes, you should be able to log-in with:
+- username: `,admin`
+- password: `<the-password-you-set-above>`
+
+### Applying the license
+
+Once you log-in, you will see an organisation has been created for you. 
+1. You can rename it or create a new organization.
+2. Navigate to your new organization's page and send us it's id
+   - It should look something like this: https://your-url.com/orgs/649f240f7fb955000c1fd10b/workspaces
+3. We will then give you a License Key which you can apply on your org's billing page
 
 ### Connecting to your NxCloud instance
 
@@ -57,6 +71,14 @@ In your Nx workspace, you can enable NxCloud by running:
 ```bash
 NX_CLOUD_API="https://nx-cloud.on.my-domain.ca" npx nx connect
 ```
+
+If it doesn't work, there might be an issue with unrecognized certificates on your instance. You can try running with:
+
+```bash
+NODE_TLS_REJECT_UNAUTHORIZED=0 NX_CLOUD_API="https://nx-cloud.on.my-domain.ca" npx nx connect
+```
+
+Although we have [a full guide here](https://github.com/nrwl/nx-cloud-helm/blob/main/PROXY-GUIDE.md#nxcloud-runner-proxy-issues) for dealing with self-signed certificates.
 
 ### Advanced configuration and auth
 
@@ -80,12 +102,15 @@ nxCloudAppURL: 'https://nx-cloud.on.my-domain.ca'
 #github:
 #  auth:
 #    enabled: false
+#  pr:
+#    apiUrl: '' # this is only needed if you have a self-hosted github instance
 
 #gitlab:
-#  apiUrl: '' # this is only needed if you have a self-hosted instance
+#  apiUrl: '' # this is only needed if you have a self-hosted gitlab instance
 #  auth:
 #    enabled: false
 
+# we do not support self-hosted bitbucket instances
 #bitbucket:
 #  auth:
 #    enabled: false

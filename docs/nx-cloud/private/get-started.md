@@ -1,8 +1,11 @@
 # Running Nx Cloud Enterprise
 
-We offer multiple ways of running NxCloud for our Enterprise customers. The below options are listed in the order we recommend them, from easiest to most complex in
+We offer multiple ways of running NxCloud for our Enterprise customers. The below options are listed in recommended order, from easiest to most complex in
 terms of set-up and maintenance for your team. Please carefully consider your organization's requirements and level of infrastructure expertise before deciding on
 a deployment option.
+
+Also, please make sure to [get in touch with us first](https://nx.app/enterprise?utm_source=nx.dev) so we can start creating an Enterprise package
+that best fits your needs, and discuss any questions you might have!
 
 ## Clusters managed by us
 
@@ -32,13 +35,11 @@ We'll be able to discuss specific requirements such as:
 - Dedicated instances
 - Storage encryption
 - Storage replication / redundancy
-- No external API calls to any services outside of the cluster we set-up for you
 
 This would be a "best of both worlds" option, as it would free you up from managing the instance yourself, but you will get to define specific parameters of how it should it run.
-Your data and the NxCloud will run in complete isolation and will only serve your company. Once you let us know you'd like this option, depending on the agreed requirements,
-it might take a few days to get it set up.
+Your data and the NxCloud will run in complete isolation and will only serve your company. There will be no external API calls to any services outside of the cluster we set-up for you.
 
-If you'd like to use any of the above options, please mention this to your Enterprise support contact, and they'll be able to set you up with an unlimited use license.
+Once you let us know you'd like this option, depending on the agreed requirements, it might take a few days to get it set up.
 
 ## On-prem, managed by your organization
 
@@ -50,10 +51,9 @@ Refer to our ["Self-contained VM" guide](/nx-cloud/private-cloud/ami-setup) for 
 
 #### Multi-node setup with Kubernetes
 
-While we'd strongly recommend the above options first, because they remove a lot of the maintenance burden, and do not require too much infrastructure expertise,
-we also offer a multi-node Kubernetes setup, that is deployed via Helm.
+The options above remove most of the maintenance burden required on your part, so we strongly recommend them! They also don't require too much infrastructure expertise.
 
-You can head over to our [Helm repository](https://github.com/nrwl/nx-cloud-helm/) to explore this option.
+We do offer, however, a multi-node Kubernetes setup, that is deployed via Helm. You can head over to our [Helm repository](https://github.com/nrwl/nx-cloud-helm/) to explore this option.
 
 ## Resources
 
