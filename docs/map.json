@@ -1541,7 +1541,7 @@
         },
         {
           "name": "Enterprise + On Prem",
-          "id": "enterprise",
+          "id": "private-cloud",
           "description": "Learn about Nx Cloud Enterprise + On-Prem.",
           "itemList": [
             {
