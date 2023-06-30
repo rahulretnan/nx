@@ -232,10 +232,10 @@
     "path": "/nx-cloud/account/encryption",
     "tags": []
   },
-  "/nx-cloud/private-cloud": {
-    "id": "private-cloud",
-    "name": "On Prem",
-    "description": "Learn about Nx Cloud On Premise, dedicated Nx Cloud application hosted on your server, in your network with total private access.",
+  "/nx-cloud/enterprise": {
+    "id": "enterprise",
+    "name": "Enterprise + On Prem",
+    "description": "Learn about Nx Cloud Enterprise + On-Prem.",
     "file": "",
     "itemList": [
       {
@@ -245,7 +245,7 @@
         "file": "nx-cloud/private/get-started",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/get-started",
+        "path": "/nx-cloud/enterprise/get-started",
         "tags": []
       },
       {
@@ -255,7 +255,7 @@
         "file": "nx-cloud/private/auth-single-admin",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/auth-single-admin",
+        "path": "/nx-cloud/enterprise/auth-single-admin",
         "tags": []
       },
       {
@@ -265,7 +265,7 @@
         "file": "nx-cloud/private/auth-github",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/auth-github",
+        "path": "/nx-cloud/enterprise/auth-github",
         "tags": []
       },
       {
@@ -275,7 +275,7 @@
         "file": "nx-cloud/private/ami-setup",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/ami-setup",
+        "path": "/nx-cloud/enterprise/ami-setup",
         "tags": []
       },
       {
@@ -285,7 +285,7 @@
         "file": "nx-cloud/private/auth-gitlab",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/auth-gitlab",
+        "path": "/nx-cloud/enterprise/auth-gitlab",
         "tags": []
       },
       {
@@ -295,7 +295,7 @@
         "file": "nx-cloud/private/auth-bitbucket",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/auth-bitbucket",
+        "path": "/nx-cloud/enterprise/auth-bitbucket",
         "tags": []
       },
       {
@@ -305,7 +305,7 @@
         "file": "nx-cloud/private/auth-saml",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/auth-saml",
+        "path": "/nx-cloud/enterprise/auth-saml",
         "tags": []
       },
       {
@@ -315,92 +315,92 @@
         "file": "nx-cloud/private/advanced-config",
         "itemList": [],
         "isExternal": false,
-        "path": "/nx-cloud/private-cloud/advanced-config",
+        "path": "/nx-cloud/enterprise/advanced-config",
         "tags": []
       }
     ],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud",
+    "path": "/nx-cloud/enterprise",
     "tags": []
   },
-  "/nx-cloud/private-cloud/get-started": {
+  "/nx-cloud/enterprise/get-started": {
     "id": "get-started",
     "name": "Get Started",
     "description": "",
     "file": "nx-cloud/private/get-started",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/get-started",
+    "path": "/nx-cloud/enterprise/get-started",
     "tags": []
   },
-  "/nx-cloud/private-cloud/auth-single-admin": {
+  "/nx-cloud/enterprise/auth-single-admin": {
     "id": "auth-single-admin",
     "name": "Authenticate with a Single Admin",
     "description": "",
     "file": "nx-cloud/private/auth-single-admin",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/auth-single-admin",
+    "path": "/nx-cloud/enterprise/auth-single-admin",
     "tags": []
   },
-  "/nx-cloud/private-cloud/auth-github": {
+  "/nx-cloud/enterprise/auth-github": {
     "id": "auth-github",
     "name": "Authenticate with GitHub",
     "description": "",
     "file": "nx-cloud/private/auth-github",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/auth-github",
+    "path": "/nx-cloud/enterprise/auth-github",
     "tags": []
   },
-  "/nx-cloud/private-cloud/ami-setup": {
+  "/nx-cloud/enterprise/ami-setup": {
     "id": "ami-setup",
     "name": "On-Prem VM Setup",
     "description": "",
     "file": "nx-cloud/private/ami-setup",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/ami-setup",
+    "path": "/nx-cloud/enterprise/ami-setup",
     "tags": []
   },
-  "/nx-cloud/private-cloud/auth-gitlab": {
+  "/nx-cloud/enterprise/auth-gitlab": {
     "id": "auth-gitlab",
     "name": "Authenticate with GitLab",
     "description": "",
     "file": "nx-cloud/private/auth-gitlab",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/auth-gitlab",
+    "path": "/nx-cloud/enterprise/auth-gitlab",
     "tags": []
   },
-  "/nx-cloud/private-cloud/auth-bitbucket": {
+  "/nx-cloud/enterprise/auth-bitbucket": {
     "id": "auth-bitbucket",
     "name": "Authenticate with BitBucket",
     "description": "",
     "file": "nx-cloud/private/auth-bitbucket",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/auth-bitbucket",
+    "path": "/nx-cloud/enterprise/auth-bitbucket",
     "tags": []
   },
-  "/nx-cloud/private-cloud/auth-saml": {
+  "/nx-cloud/enterprise/auth-saml": {
     "id": "auth-saml",
     "name": "Authenticate via SAML",
     "description": "",
     "file": "nx-cloud/private/auth-saml",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/auth-saml",
+    "path": "/nx-cloud/enterprise/auth-saml",
     "tags": []
   },
-  "/nx-cloud/private-cloud/advanced-config": {
+  "/nx-cloud/enterprise/advanced-config": {
     "id": "advanced-config",
     "name": "Advanced Configuration",
     "description": "",
     "file": "nx-cloud/private/advanced-config",
     "itemList": [],
     "isExternal": false,
-    "path": "/nx-cloud/private-cloud/advanced-config",
+    "path": "/nx-cloud/enterprise/advanced-config",
     "tags": []
   },
   "/nx-cloud/reference": {

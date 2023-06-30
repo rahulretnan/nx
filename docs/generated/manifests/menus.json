@@ -3911,14 +3911,14 @@
         "disableCollapsible": false
       },
       {
-        "name": "On Prem",
-        "path": "/nx-cloud/private-cloud",
-        "id": "private-cloud",
+        "name": "Enterprise + On Prem",
+        "path": "/nx-cloud/enterprise",
+        "id": "enterprise",
         "isExternal": false,
         "children": [
           {
             "name": "Get Started",
-            "path": "/nx-cloud/private-cloud/get-started",
+            "path": "/nx-cloud/enterprise/get-started",
             "id": "get-started",
             "isExternal": false,
             "children": [],
@@ -3926,7 +3926,7 @@
           },
           {
             "name": "Authenticate with a Single Admin",
-            "path": "/nx-cloud/private-cloud/auth-single-admin",
+            "path": "/nx-cloud/enterprise/auth-single-admin",
             "id": "auth-single-admin",
             "isExternal": false,
             "children": [],
@@ -3934,7 +3934,7 @@
           },
           {
             "name": "Authenticate with GitHub",
-            "path": "/nx-cloud/private-cloud/auth-github",
+            "path": "/nx-cloud/enterprise/auth-github",
             "id": "auth-github",
             "isExternal": false,
             "children": [],
@@ -3942,7 +3942,7 @@
           },
           {
             "name": "On-Prem VM Setup",
-            "path": "/nx-cloud/private-cloud/ami-setup",
+            "path": "/nx-cloud/enterprise/ami-setup",
             "id": "ami-setup",
             "isExternal": false,
             "children": [],
@@ -3950,7 +3950,7 @@
           },
           {
             "name": "Authenticate with GitLab",
-            "path": "/nx-cloud/private-cloud/auth-gitlab",
+            "path": "/nx-cloud/enterprise/auth-gitlab",
             "id": "auth-gitlab",
             "isExternal": false,
             "children": [],
@@ -3958,7 +3958,7 @@
           },
           {
             "name": "Authenticate with BitBucket",
-            "path": "/nx-cloud/private-cloud/auth-bitbucket",
+            "path": "/nx-cloud/enterprise/auth-bitbucket",
             "id": "auth-bitbucket",
             "isExternal": false,
             "children": [],
@@ -3966,7 +3966,7 @@
           },
           {
             "name": "Authenticate via SAML",
-            "path": "/nx-cloud/private-cloud/auth-saml",
+            "path": "/nx-cloud/enterprise/auth-saml",
             "id": "auth-saml",
             "isExternal": false,
             "children": [],
@@ -3974,7 +3974,7 @@
           },
           {
             "name": "Advanced Configuration",
-            "path": "/nx-cloud/private-cloud/advanced-config",
+            "path": "/nx-cloud/enterprise/advanced-config",
             "id": "advanced-config",
             "isExternal": false,
             "children": [],
@@ -3985,7 +3985,7 @@
       },
       {
         "name": "Get Started",
-        "path": "/nx-cloud/private-cloud/get-started",
+        "path": "/nx-cloud/enterprise/get-started",
         "id": "get-started",
         "isExternal": false,
         "children": [],
@@ -3993,7 +3993,7 @@
       },
       {
         "name": "Authenticate with a Single Admin",
-        "path": "/nx-cloud/private-cloud/auth-single-admin",
+        "path": "/nx-cloud/enterprise/auth-single-admin",
         "id": "auth-single-admin",
         "isExternal": false,
         "children": [],
@@ -4001,7 +4001,7 @@
       },
       {
         "name": "Authenticate with GitHub",
-        "path": "/nx-cloud/private-cloud/auth-github",
+        "path": "/nx-cloud/enterprise/auth-github",
         "id": "auth-github",
         "isExternal": false,
         "children": [],
@@ -4009,7 +4009,7 @@
       },
       {
         "name": "On-Prem VM Setup",
-        "path": "/nx-cloud/private-cloud/ami-setup",
+        "path": "/nx-cloud/enterprise/ami-setup",
         "id": "ami-setup",
         "isExternal": false,
         "children": [],
@@ -4017,7 +4017,7 @@
       },
       {
         "name": "Authenticate with GitLab",
-        "path": "/nx-cloud/private-cloud/auth-gitlab",
+        "path": "/nx-cloud/enterprise/auth-gitlab",
         "id": "auth-gitlab",
         "isExternal": false,
         "children": [],
@@ -4025,7 +4025,7 @@
       },
       {
         "name": "Authenticate with BitBucket",
-        "path": "/nx-cloud/private-cloud/auth-bitbucket",
+        "path": "/nx-cloud/enterprise/auth-bitbucket",
         "id": "auth-bitbucket",
         "isExternal": false,
         "children": [],
@@ -4033,7 +4033,7 @@
       },
       {
         "name": "Authenticate via SAML",
-        "path": "/nx-cloud/private-cloud/auth-saml",
+        "path": "/nx-cloud/enterprise/auth-saml",
         "id": "auth-saml",
         "isExternal": false,
         "children": [],
@@ -4041,7 +4041,7 @@
       },
       {
         "name": "Advanced Configuration",
-        "path": "/nx-cloud/private-cloud/advanced-config",
+        "path": "/nx-cloud/enterprise/advanced-config",
         "id": "advanced-config",
         "isExternal": false,
         "children": [],
